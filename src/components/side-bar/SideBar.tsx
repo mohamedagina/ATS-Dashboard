@@ -6,7 +6,8 @@ import {
   GoPeople,
   GoChevronLeft,
   GoShareAndroid,
-  GoHeart
+  GoHeart,
+  GoGear
 } from 'react-icons/go';
 import { FiMenu } from 'react-icons/fi';
 import { LuCalendarCheck, LuFileText } from 'react-icons/lu';
@@ -87,10 +88,23 @@ export const SideBar = () => {
               </li>
             </ul>
           </nav>
-          <div className="user-identity">
-            <ProfilePicPlaceholder username={user.name} />
-            {user.name}
-          </div>
+
+          <ul className="nav-links account-info">
+            <li>
+              <NavLink to="/settings">
+                <span className="link-icon">
+                  <GoGear />
+                </span>
+                Settings
+              </NavLink>
+            </li>
+            <li>
+              <div className="user-identity">
+                <ProfilePicPlaceholder username={user.name} />
+                {user.name}
+              </div>
+            </li>
+          </ul>
         </aside>
       </div>
     </>

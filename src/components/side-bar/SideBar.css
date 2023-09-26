@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 1rem 2rem;
-  background-color: var(--clr-background);
+  background-color: #fff;
   box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -85,13 +85,15 @@
   font-weight: var(--font-weight-medium);
 }
 
+.account-info {
+  margin-block-start: auto;
+}
 .user-identity {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 1rem;
   padding-inline-start: 0.5rem;
-  margin-block-start: auto;
 }
 
 .user-identity > .profile-picture-placeholder {
