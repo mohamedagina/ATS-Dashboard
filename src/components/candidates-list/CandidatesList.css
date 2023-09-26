@@ -1,0 +1,21 @@
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-panel-background);
+  border-radius: 1rem;
+}
+
+.candidates-list > :not(:last-child) {
+  border-bottom: 1px solid var(--clr-divider);
+}
+
+.candidates-list > header {
+  background-color: var(--clr-panel-background);
+  padding-block: 1rem;
+}
+
+.candidates-list > header .ant-checkbox-wrapper {
+  gap: 1.5rem;
+}
