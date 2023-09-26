@@ -1,0 +1,25 @@
+.candidate {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.candidate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #f3fafc;
+  color: #037092;
+  padding: 0.125rem 0.625rem;
+  border-radius: 2rem;
+}

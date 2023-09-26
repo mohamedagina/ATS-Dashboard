@@ -36,18 +36,16 @@ ul {
   --clr-primary: #1d4ed8;
   --clr-active-btn-bg: #e9efff;
   --clr-background: #f9faff;
-  --clr-divider: #c4c4c4;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semi-bold: 600;
-  --font-weight-bold: 700;
+  --clr-panel-background: #fff;
+  --clr-divider: #eee;
   --font-primary: 'Poppins', sans-serif;
   --sidebar-width: 5rem;
 }
 
 body {
-  font: var(--font-weight-semi-bold) 1.25rem / 1 var(--font-primary);
+  font: 400 0.875rem / 1 var(--font-primary);
   color: var(--clr-text-primary);
+  background-color: var(--clr-background);
 }
 
 button {
@@ -65,4 +63,45 @@ ul {
 .burger-btn {
   background-color: transparent;
   border: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.xl {
+  font-size: 1.25rem;
+}
+.lg {
+  font-size: 1rem;
+}
+.md {
+  font-size: 0.875rem;
+}
+
+.sm {
+  font-size: 0.625rem;
+}
+
+.xsm {
+  font-size: 0.5rem;
+}
+
+.primary {
+  color: var(--clr-primary);
 }
