@@ -47,5 +47,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@mohamedagina](https://www.frontendmentor.io/profile/mohamedagina)
 - LinkedIn - [@mohamedagina](https://www.linkedin.com/in/mohamed-agina/)
