@@ -1,0 +1,29 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filters-header > span {
+  font-size: 0.75rem;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ant-collapse .ant-collapse-item-disabled > .ant-collapse-header {
+  cursor: default;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  color: var(--clr-primary);
+}
