@@ -17,10 +17,10 @@ export const Dashboard = () => {
       </div>
       <CandidatesList />
       <div className="floating-info">
-        <Link to="/videos" title="videos" className="floating-link">
+        <Link to="#" title="videos" className="floating-link">
           <PiPlayCircleBold />4
         </Link>
-        <Link to="/programs" className="floating-link primary">
+        <Link to="#" className="floating-link primary">
           <PiNotebook></PiNotebook>5 Programs
         </Link>
       </div>

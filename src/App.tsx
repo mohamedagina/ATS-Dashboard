@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Dashboard } from './pages';
+import { Dashboard, UnderConstruction } from './pages';
 import { SideBar } from './components';
 import { ConfigProvider } from 'antd';
 
@@ -24,6 +24,7 @@ function App() {
       <SideBar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="*" element={<UnderConstruction />} />
       </Routes>
     </ConfigProvider>
   );
