@@ -37,7 +37,10 @@ ul {
   --clr-active-btn-bg: #e9efff;
   --clr-background: #f9faff;
   --clr-panel-background: #fff;
+  --clr-menu-item-hover: #edf2ff;
   --clr-divider: #eee;
+  --clr-danger: #a80000;
+  --spaces-primary: 2rem;
   --font-primary: 'Poppins', sans-serif;
   --sidebar-width: 5rem;
 }
@@ -62,6 +65,7 @@ ul {
 
 .burger-btn {
   background-color: transparent;
+  font-size: 1.25rem;
   border: none;
 }
 
@@ -90,6 +94,7 @@ ul {
 .lg {
   font-size: 1rem;
 }
+
 .md {
   font-size: 0.875rem;
 }
@@ -104,4 +109,19 @@ ul {
 
 .primary {
   color: var(--clr-primary);
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.danger {
+  color: var(--clr-danger);
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spaces-primary: 1rem;
+  }
 }
