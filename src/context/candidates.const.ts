@@ -1,4 +1,4 @@
-import { Candidate } from '../models';
+import { Candidate, Stage } from '../models';
 
 export const candidates: Candidate[] = [
   {
@@ -81,5 +81,44 @@ export const candidates: Candidate[] = [
     hashTags: ['#bad_candidate', '#not_recommended'],
     tags: ['New York', 'Marketing', 'London'],
     stage: 'Withdrawn'
+  }
+];
+
+export const stages: Stage[] = [
+  {
+    title: 'Applied',
+    candidates: 1745
+  },
+  {
+    title: 'Shortlisted',
+    candidates: 453
+  },
+  {
+    title: 'Technical Interview',
+    candidates: 123
+  },
+  {
+    title: 'Opportunity Browsing',
+    candidates: 243
+  },
+  {
+    title: 'Video Interview I',
+    candidates: 25
+  },
+  {
+    title: 'Video Interview II',
+    candidates: 25
+  },
+  {
+    title: 'Video Interview III',
+    candidates: 25
+  },
+  {
+    title: 'Offer',
+    candidates: 25
+  },
+  {
+    title: 'Withdrawn',
+    candidates: 25
   }
 ];
