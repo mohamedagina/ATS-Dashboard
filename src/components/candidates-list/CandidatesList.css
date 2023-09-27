@@ -1,7 +1,34 @@
+.candidates-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.candidates-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.candidates-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--clr-divider);
+  border-radius: 0.5rem;
+  background-color: var(--clr-panel-background);
+}
+
 .candidates-list {
   display: flex;
   flex-direction: column;
-  flex: 1;
   padding: 0.5rem 1rem;
   background-color: var(--clr-panel-background);
   border-radius: 1rem;
@@ -12,10 +39,108 @@
 }
 
 .candidates-list > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  white-space: nowrap;
   background-color: var(--clr-panel-background);
   padding-block: 1rem;
 }
 
 .candidates-list > header .ant-checkbox-wrapper {
   gap: 1.5rem;
+}
+
+.list-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.list-tabs a:not(:last-child) {
+  padding-inline-end: 0.5rem;
+  border-inline-end: 1px solid var(--clr-divider);
+}
+
+.list-tabs .active {
+  color: var(--clr-primary);
+}
+
+.list-tabs .stage-candidates {
+  padding: 0.25rem 0.5rem;
+  margin-inline-start: 0.5rem;
+}
+
+.stage-item,
+.stages-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stages-menu {
+  padding: 0.5rem 1rem;
+  width: min(320px, 100%);
+  min-width: 230px;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+  box-shadow: 0px 4px 25px 0px rgba(29, 78, 216, 0.05);
+}
+
+.stages-menu.ant-dropdown-open {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.ant-dropdown .ant-dropdown-menu,
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 0;
+}
+
+.ant-dropdown .ant-dropdown-menu {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item:not(:last-child) {
+  border-bottom: 1px solid var(--clr-divider);
+}
+
+.stage-item {
+  padding: 1.25rem 1rem;
+  font-weight: 500;
+  color: #0b0b0b;
+}
+
+.stage-item:where(:hover, .selected) {
+  color: var(--clr-primary);
+  background-color: var(--clr-menu-item-hover);
+}
+
+.stage-candidates {
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  background-color: #f8f8f8;
+  color: #444444;
+}
+
+.stage-item:where(.selected, :hover) .stage-candidates {
+  color: var(--clr-primary);
+  background-color: #d1ddff;
+}
+
+@media (max-width: 1200px) {
+  .candidates-header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .candidates-actions {
+    flex-wrap: wrap;
+  }
 }
